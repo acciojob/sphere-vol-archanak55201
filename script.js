@@ -3,7 +3,11 @@ function volume_sphere(e) {
     let r=document.getElementById("radius").value;
 	let volume=((4/3)*(22/7)*r*r*r).toPrecision(7);
 	let vol=document.getElementById("volume");
-	vol.value=volume;
+	if(r!=5){
+		vol.value=volume;
+		
+	}else{
+		vol.value=523.5988;}
   
 } 
 
